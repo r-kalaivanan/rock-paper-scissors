@@ -1,1 +1,14 @@
-console.log("Hello, World!")
+function getRandomInt() {
+    return Math.floor(Math.random() * (3 - 1 + 1) + 1)
+}
+
+function getComputerChoice() {
+    let randomInt = getRandomInt()
+    if (randomInt == 1) {
+        return "rock";
+    } else if (randomInt == 2) {
+        return "paper"
+    } else {
+        return "scissors"
+    }
+}
